@@ -135,12 +135,15 @@ const App = () => (
       <Segment basic>
         <Header as='h2'>Partner</Header>
         <div className='is-flex partner'>
-          <a href='https://opendata.ch/' target="_blank"><img src='/img/OpenData.ch@2x.png' alt='open data'/></a>
-          <a href='https://www.openfood.ch/' target="_blank"><img src='/img/OpenFoodlogo@2x.png' alt='open food'/></a>
-          <a href='https://www.identitas.ch/' target='_blank'><Image src='/img/id.png' alt='identitas'/></a>
-          <a href='https://www.hafl.bfh.ch/home.html' target='_blank'><Image src='/img/BFH1.png' alt='BFH-HAFL'/></a>
-          <a href='http://www.20min.ch/' target='_blank'><Image src='/img/20min@2x.png' alt='20min'/></a>
-          <a href='https://www.tagesanzeiger.ch/sonntagszeitung/' target='_blank'><Image src='/img/SonntagsZeitung@2x.png' alt='SonntagsZeitung'/></a>
+          <a href='https://opendata.ch/' target="_blank" rel="noopener noreferrer"><img src='/img/OpenData.ch@2x.png' alt='open data'/></a>
+          <a href='https://food.opendata.ch/' target="_blank" rel="noopener noreferrer"><img src='/img/OpenFoodlogo@2x.png' alt='open food'/></a>
+          <a href='https://www.identitas.ch/' target='_blank' rel="noopener noreferrer"><Image src='/img/id.png' alt='identitas'/></a>
+          <a href='https://www.hafl.bfh.ch/home.html' target='_blank' rel="noopener noreferrer"><Image src='/img/BFH1.png' alt='BFH-HAFL'/></a>
+        </div>
+        <Header as='h2'>Medien</Header>
+        <div className='is-flex partner'>
+          <a href='http://www.20min.ch/schweiz/bern/story/28948666' target='_blank' rel="noopener noreferrer"><Image src='/img/20min@2x.png' alt='20min'/></a>
+          <a href='https://desktop.12app.ch/articles/30000183' target='_blank' rel="noopener noreferrer"><Image src='/img/SonntagsZeitung@2x.png' alt='SonntagsZeitung'/></a>
         </div>
       </Segment>
     </div>
