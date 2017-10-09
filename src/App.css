@@ -1,35 +1,30 @@
-.logoMeatstory {
-  margin-top: 2em;
-  margin-bottom: 2em;
+.grey {
+  background-color: #dedede;
 }
-
+.darkgrey {
+  background-color: #7a7a7a;
+}
 .is-flex {
   display: flex;
+}
+.partner {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
- img {
+.icons {
    border-radius: 0px !important;
- }
-
- .segment {
-   padding-top: 2.8em !important;
-   padding-bottom: 2.8em !important;
+}
+.segment {
+   padding: 2em !important;
    margin: 0px !important;
- }
-
+}
 .content {
   margin-top: 0px !important;
   margin-bottom: 10px !important;
 }
-
 .is-flex img {
   margin: 2em;
   max-width: 100%;
-  max-height: 7em;
-}
-.bfh {
-  background-color: #fff;
-  padding: 0.5em;
+  max-height: 4em;
 }
