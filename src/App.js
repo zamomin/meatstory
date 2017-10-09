@@ -1,10 +1,9 @@
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Container,
   Segment,
   Header,
-  List,
   Feed,
   Image,
   Input,
@@ -16,7 +15,7 @@ const App = () => (
   <Container>
     <div>
       <Segment basic>
-        <Image src='/img/logo-meatstory@2x.png' size='small'/>
+        <Image src='/img/logo-meatstory@2x.png' size='small' alt='logo meatstory'/>
       </Segment>
     </div>
     <div className='grey'>
@@ -27,7 +26,7 @@ const App = () => (
     </div>
     <div>
       <Segment basic>
-        <Header as='h2'>So gehts los:</Header>
+        <Header as='h2'>So funktionierts</Header>
         <Feed>
           <Feed.Event>
             <Feed.Label>
@@ -42,7 +41,7 @@ const App = () => (
               <Header as='h2'>2</Header>
             </Feed.Label>
           <Feed.Content>
-            Scanne den QR Code auf dem Produkt<br/> oder <br/> gibt die MeatStory-Nummer manuell ein. Die Nummer entspricht der Tierverkehrsdatenbank-Nummer, Beispiel CH120.1166.0014.6. Die Eingabe erfolgt ohne CH und ohne Punkte: 120116600146.
+            Scanne den QR Code auf dem Produkt oder gib die MeatStory-Nummer manuell ein. Die Nummer entspricht der Tierverkehrsdatenbank-Nummer (TDV Nummer), z.B. CH120.1166.0014.6.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -51,6 +50,35 @@ const App = () => (
             </Feed.Label>
             <Feed.Content>
              Informiere dich über die Herkunft deines Produkts, lerne seine Geschichte kennen und geniesse deine Mahlzeit.
+            </Feed.Content>
+          </Feed.Event>
+        </Feed>
+      </Segment>
+    </div>
+    <div>
+      <Segment basic tertiary>
+        <p>TDV Nummer auf der Etikette</p>
+        <Input action='GO' />
+      </Segment>
+    </div>
+    <div>
+      <Segment basic>
+        <Header as='h2'>Frida la vache qui rit</Header>
+        <Feed>
+          <Feed.Event>
+            <Feed.Label>
+              <img src='/img/cow.svg' size= 'tiny' className='icons' alt='cow'/>
+            </Feed.Label>
+            <Feed.Content>
+              Die Irish Golden Hopper Frida war die Tochter von Samira und Elron und ist am 1.April 2016 zur Welt gekommen mit einem Gewicht von 48 Kilogramm. <br/>Dank der zarten Gräser und Kräuter ist ihr Fleisch saftig und schmackhaft geworden.
+            </Feed.Content>
+          </Feed.Event>
+          <Feed.Event>
+            <Feed.Label>
+              <img src='/img/tractor.svg' size= 'tiny' className='icons' alt='tractor'/>
+            </Feed.Label>
+            <Feed.Content>
+              Nach der Geburt bei der Familie Hornbläser in Finkenschlupf ging die Reise nach Weissfurchen. <br/>Dort verbrachte sie viel Zeit fressend und wiederkäuend mit ihren FreundInnen auf den Weiden.
             </Feed.Content>
           </Feed.Event>
         </Feed>
@@ -67,10 +95,10 @@ const App = () => (
     </div>
     <div>
       <Segment basic>
-        <Header as='h2'>Teilen Sie uns Ihre Meinung mit!</Header>
+        <Header as='h2'>Teil uns deine Meinung mit!</Header>
         <Form>
           <Form.Group grouped>
-            <Header as='h3'>Wie finden Sie Ihre MeatStory</Header>
+            <Header as='h3'>Wie findest du deine MeatStory?</Header>
             <Form.Field>
               <Radio
                 label='Interessant'
@@ -94,9 +122,10 @@ const App = () => (
             </Form.Field>
           </Form.Group>
           <Form.Group grouped>
-            <Header as='h3'>Welche Information finden Sie besonders interessant, was vermissen Sie?</Header>
-            <Form.Field>
-              <Input action='GO'/>
+            <Header as='h3'>Welche Information findest du besonders interessant, was vermisst du?</Header>
+            <Form.Field control='textarea' rows='3' />
+            <Form.Field control='button'>
+              Abschicken
             </Form.Field>
           </Form.Group>
         </Form>
@@ -106,50 +135,19 @@ const App = () => (
       <Segment basic inverted color='grey'>
         <Header as='h2'>Partner</Header>
         <div className='is-flex partner'>
-          <img src='/img/OpenData.ch@2x.png'/>
-          <img src='/img/OpenFoodlogo@2x.png'/>
-          <Image src='/img/id.png'/>
-          <Image src='/img/BFH1.png'/>
-          <Image src='/img/20min@2x.png'/>
-          <Image src='/img/SonntagsZeitung@2x.png'/>
+          <img src='/img/OpenData.ch@2x.png' alt='open data'/>
+          <img src='/img/OpenFoodlogo@2x.png' alt='open food'/>
+          <Image src='/img/id.png' alt='identitas'/>
+          <Image src='/img/BFH1.png' alt='BFH-HAFL'/>
+          <Image src='/img/20min@2x.png' alt='20min'/>
+          <Image src='/img/SonntagsZeitung@2x.png' alt='SonntagsZeitung'/>
         </div>
       </Segment>
     </div>
     <div>
       <Segment basic inverted>
         <Header as='h2'>Get in touch</Header>
-        <p>sam@meatstory.ch</p>
-      </Segment>
-    </div>
-    <div>
-      <Segment basic tertiary>
-        <p>TDV Nummer auf der Etikette</p>
-        <Input action='GO' />
-      </Segment>
-    </div>
-    <div>
-      <Segment basic>
-        <Header as='h2'>Frida la vache qui rit</Header>
-        Murten, Fr <br/>
-        Irish Golden Hopper
-        <Feed>
-          <Feed.Event>
-            <Feed.Label>
-              <img src='/img/cow.svg' size= 'tiny' className='icons'/>
-            </Feed.Label>
-            <Feed.Content>
-              Die Irish Golden Hopper Frida war die Tochter von Samira und Elron und ist am 1.April 2016 zur Welt gekommen mit einem Gewicht von 48 Kilogramm. <br/>Dank der zarten Gräser und Kräuter ist ihr Fleisch saftig und schmackhaft geworden.
-            </Feed.Content>
-          </Feed.Event>
-          <Feed.Event>
-            <Feed.Label>
-              <img src='/img/tractor.svg' size= 'tiny' className='icons'/>
-            </Feed.Label>
-            <Feed.Content>
-              Nach der Geburt bei der Familie Hornbläser in Finkenschlupf ging die Reise nach Weissfurchen. <br/>Dort verbrachte sie viel Zeit fressend und wiederkäuend mit ihren FreundInnen auf den Weiden.
-            </Feed.Content>
-          </Feed.Event>
-        </Feed>
+        <p>hello@meatstory.ch</p>
       </Segment>
     </div>
   </Container>

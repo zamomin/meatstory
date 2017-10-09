@@ -9,7 +9,7 @@
 }
 .partner {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .icons {
@@ -24,7 +24,8 @@
   margin-bottom: 10px !important;
 }
 .is-flex img {
-  margin: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
   max-width: 100%;
   max-height: 4em;
 }
