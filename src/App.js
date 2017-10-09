@@ -16,12 +16,10 @@ const App = () => (
     <div>
       <Image src='/img/logo-meatstory@2x.png' size= 'medium' centered className='logoMeatstory'/>
     </div>
-
     <Segment basic secondary>
       <Header as='h2'>Wer liegt auf deinem Teller?</Header>
       Wir machen die Geschichte deines Steaks sichtbar.
     </Segment>
-
     <Segment basic>
       <Header as='h3'>So gehts los:</Header>
       <Feed>
@@ -51,12 +49,10 @@ const App = () => (
         </Feed.Event>
       </Feed>
     </Segment>
-
     <Segment basic secondary>
       <Header as='h2'>Über uns</Header>
       Mit der "Meatstory" möchten wir den Weg des Fleisches von der Weide bis auf den Teller transparent machen.
     </Segment>
-
     <Segment basic>
       <Header as='h2'>Let us know your thoughts!</Header>
       <Form>
@@ -76,7 +72,6 @@ const App = () => (
         </Form.Group>
       </Form>
     </Segment>
-
     <Segment basic inverted color='grey'>
       <Header as='h2'>Partner</Header>
       <div className='is-flex'>
@@ -88,21 +83,14 @@ const App = () => (
         <img src='/img/SonntagsZeitung@2x.png'/>
       </div>
     </Segment>
-
     <Segment basic inverted>
       <Header as='h2'>Get in touch</Header>
       sam@meatstory.ch
     </Segment>
-
-    <Segment basic>
-      meatstory part story
-    </Segment>
-
     <Segment basic secondary>
       TDV Nummer auf der Etikette <br/>
       <Input action='GO' />
     </Segment>
-
     <Segment basic>
       <Header as='h2'>Frida la vache qui rit</Header>
       Murten, Fr <br/>
@@ -126,11 +114,6 @@ const App = () => (
         </Feed.Event>
       </Feed>
     </Segment>
-
-    <Segment basic secondary>
-      <Header as='h2'>Über uns repeat</Header>
-    </Segment>
-
   </Container>
 )
 
