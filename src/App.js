@@ -9,6 +9,7 @@ import {
   Input,
   Form,
   Radio,
+  Button
 } from 'semantic-ui-react';
 
 const App = () => (
@@ -55,8 +56,8 @@ const App = () => (
         </Feed>
       </Segment>
     </div>
-    <div>
-      <Segment basic tertiary>
+    <div className='grey'>
+      <Segment basic>
         <p>TDV Nummer auf der Etikette</p>
         <Input action='GO' />
       </Segment>
@@ -124,15 +125,13 @@ const App = () => (
           <Form.Group grouped>
             <Header as='h3'>Welche Information findest du besonders interessant, was vermisst du?</Header>
             <Form.Field control='textarea' rows='3' />
-            <Form.Field control='button'>
-              Abschicken
-            </Form.Field>
+            <Button type='submit'>Abschicken</Button>
           </Form.Group>
         </Form>
       </Segment>
     </div>
-    <div>
-      <Segment basic inverted color='grey'>
+    <div className='darkgrey'>
+      <Segment basic>
         <Header as='h2'>Partner</Header>
         <div className='is-flex partner'>
           <img src='/img/OpenData.ch@2x.png' alt='open data'/>
@@ -146,7 +145,7 @@ const App = () => (
     </div>
     <div>
       <Segment basic inverted>
-        <Header as='h2'>Get in touch</Header>
+        <Header as='h2'>Kontakt</Header>
         <p>hello@meatstory.ch</p>
       </Segment>
     </div>
