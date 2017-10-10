@@ -34,7 +34,9 @@ const App = () => (
               <Header as='h2'>1</Header>
             </Feed.Label>
           <Feed.Content>
-            Kauf dir ein Stück Fleisch. MeatStory ermöglicht Dir, die genaue Herkunft von einem Stück Fleisch zurückzuverfolgen. Händler und Vermarkter können mit MeatStory eine viel geschätzte Transparenz bieten.
+            Kauf dir ein Stück Fleisch. MeatStory ermöglicht Dir, die genaue
+            Herkunft von einem Stück Fleisch zurückzuverfolgen. Händler und
+            Vermarkter können mit MeatStory eine viel geschätzte Transparenz bieten.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -42,7 +44,9 @@ const App = () => (
               <Header as='h2'>2</Header>
             </Feed.Label>
           <Feed.Content>
-            Scanne den QR Code auf dem Produkt oder gib die MeatStory-Nummer manuell ein. Die Nummer entspricht der Tierverkehrsdatenbank-Nummer (TDV Nummer), z.B. CH120.1166.0014.6.
+            Scanne den QR Code auf dem Produkt oder gib die MeatStory-Nummer
+            manuell ein. Die Nummer entspricht der Tierverkehrsdatenbank-Nummer
+            (TDV Nummer), z.B. CH120.1166.0014.6.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -50,7 +54,8 @@ const App = () => (
               <Header as='h2'>3</Header>
             </Feed.Label>
             <Feed.Content>
-             Informiere dich über die Herkunft deines Produkts, lerne seine Geschichte kennen und geniesse deine Mahlzeit.
+             Informiere dich über die Herkunft deines Produkts, lerne seine
+             Geschichte kennen und geniesse deine Mahlzeit.
             </Feed.Content>
           </Feed.Event>
         </Feed>
@@ -72,7 +77,10 @@ const App = () => (
               <img src='/img/cow.svg' size= 'tiny' className='icons' alt='cow'/>
             </Feed.Label>
             <Feed.Content>
-              Die Irish Golden Hopper Frida war die Tochter von Samira und Elron und ist am 1.April 2016 zur Welt gekommen mit einem Gewicht von 48 Kilogramm. <br/>Dank der zarten Gräser und Kräuter ist ihr Fleisch saftig und schmackhaft geworden.
+              Die Irish Golden Hopper Frida war die Tochter von Samira und Elron
+              und ist am 1.April 2016 zur Welt gekommen mit einem Gewicht von 48
+              Kilogramm. <br/>Dank der zarten Gräser und Kräuter ist ihr Fleisch
+              saftig und schmackhaft geworden.
             </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -80,7 +88,9 @@ const App = () => (
               <img src='/img/tractor.svg' size= 'tiny' className='icons' alt='tractor'/>
             </Feed.Label>
             <Feed.Content>
-              Nach der Geburt bei der Familie Hornbläser in Finkenschlupf ging die Reise nach Weissfurchen. <br/>Dort verbrachte sie viel Zeit fressend und wiederkäuend mit ihren FreundInnen auf den Weiden.
+              Nach der Geburt bei der Familie Hornbläser in Finkenschlupf ging
+              die Reise nach Weissfurchen. <br/>Dort verbrachte sie viel Zeit
+              fressend und wiederkäuend mit ihren FreundInnen auf den Weiden.
             </Feed.Content>
           </Feed.Event>
         </Feed>
@@ -88,7 +98,7 @@ const App = () => (
     </div>
     <div className='fair'>
       <Segment basic>
-        <Header as='h2'>Teil uns deine Meinung mit!</Header>
+        <Header as='h2'>Teile uns deine Meinung mit!</Header>
         <Form>
           <Form.Group grouped>
             <Header as='h3'>Wie findest du deine MeatStory?</Header>
@@ -123,13 +133,24 @@ const App = () => (
       </Segment>
     </div>
     <div>
-    <Segment basic>
-      <Header as='h2'>Über uns</Header>
-      <p>MeatStory ermöglicht Konsumenten die Herkunft von Fleischprodukten zu verfolgen. Die transparente Rückverfolgbarkeit erleichtert ihnen informierte Entscheidungen zu treffen.</p>
-      <p>Samuel Bühlmann schafft begeistert mehr Bewusstsein für dein Plätzli à la Minute.</p>
-      <p>Simon Josi entwickelt geniale Rückverfolgbarkeit von deinem Teller zur Wiese.</p>
-      <p>Pascal Geronimi zeichnet gekonnt Daten für Lebensmittel-LliebhaberInnen auf.</p>
-    </Segment>
+      <Segment basic className='about'>
+        <Header as='h2'>Über uns</Header>
+        <p>MeatStory ermöglicht Konsumenten die Herkunft von Fleischprodukten zu
+        verfolgen. Die transparente Rückverfolgbarkeit erleichtert ihnen informierte
+        Entscheidungen zu treffen.</p>
+        <div>
+          <Image src='/img/sam.png' avatar size='tiny'/>
+          <span> Samuel Bühlmann schafft begeistert mehr Bewusstsein für dein Plätzli à la Minute.</span>
+        </div>
+        <div>
+          <Image src='/img/simon.png' avatar size='tiny'/>
+          <span> Simon Josi entwickelt geniale Rückverfolgbarkeit von deinem Teller zur Wiese.</span>
+        </div>
+        <div>
+          <Image src='/img/pascal.png' avatar size='tiny'/>
+          <span> Pascal Geronimi zeichnet gekonnt Daten für Lebensmittel-LiebhaberInnen auf.</span>
+        </div>
+      </Segment>
     </div>
     <div className='dark'>
       <Segment basic>
