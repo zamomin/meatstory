@@ -34,9 +34,8 @@ const App = () => (
               <Header as='h2'>1</Header>
             </Feed.Label>
           <Feed.Content>
-            Kauf dir ein Stück Fleisch. MeatStory ermöglicht Dir, die genaue
-            Herkunft von einem Stück Fleisch zurückzuverfolgen. Händler und
-            Vermarkter können mit MeatStory eine viel geschätzte Transparenz bieten.
+            Kauf dir ein Stück Fleisch. Mit der Nummer der Tierverkehrsdatenbank
+            ermöglicht dir MeatStory, die genaue Herkunft davon zurückzuverfolgen.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -44,9 +43,8 @@ const App = () => (
               <Header as='h2'>2</Header>
             </Feed.Label>
           <Feed.Content>
-            Scanne den QR Code auf dem Produkt oder gib die MeatStory-Nummer
-            manuell ein. Die Nummer entspricht der Tierverkehrsdatenbank-Nummer
-            (TDV Nummer), z.B. CH120.1166.0014.6.
+            Scanne den QR-Code auf dem Produkt oder gib die TDV-Nummer
+            manuell ein, z.B. CH120.1166.0014.6.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -54,8 +52,8 @@ const App = () => (
               <Header as='h2'>3</Header>
             </Feed.Label>
             <Feed.Content>
-             Informiere dich über die Herkunft deines Produkts, lerne seine
-             Geschichte kennen und geniesse deine Mahlzeit.
+             Informiere dich über die Geschichte deines Produkts und geniesse
+             deine Mahlzeit.
             </Feed.Content>
           </Feed.Event>
         </Feed>
