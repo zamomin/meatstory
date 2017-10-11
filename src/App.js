@@ -34,8 +34,7 @@ const App = () => (
               <Header as='h2'>1</Header>
             </Feed.Label>
           <Feed.Content>
-            Kauf dir ein Stück Fleisch. Mit der Nummer der Tierverkehrsdatenbank
-            ermöglicht dir MeatStory, die genaue Herkunft davon zurückzuverfolgen.
+            Kauf dir ein Fleischprodukt welches mit einem MeatStory-Label versehen ist.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -43,8 +42,7 @@ const App = () => (
               <Header as='h2'>2</Header>
             </Feed.Label>
           <Feed.Content>
-            Scanne den QR-Code auf dem Produkt oder gib die TDV-Nummer
-            manuell ein, z.B. CH120.1166.0014.6.
+            Scanne den QR-Code auf dem Produkt oder gib die MeatStory-ID manuell ein, z.B. 120 1166 0014 6.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
@@ -52,8 +50,7 @@ const App = () => (
               <Header as='h2'>3</Header>
             </Feed.Label>
             <Feed.Content>
-             Informiere dich über die Geschichte deines Produkts und geniesse
-             deine Mahlzeit.
+             Lerne die Geschichte deines Produkts kennen.
             </Feed.Content>
           </Feed.Event>
         </Feed>
@@ -61,9 +58,9 @@ const App = () => (
     </div>
     <div className='fair'>
       <Segment basic>
-        <Header as='h2'>Los gehts</Header>
-        <p>TDV Nummer auf der Etikette</p>
-        <Input action='GO' />
+        <Header as='h2'>Finde deine Story!</Header>
+        <p>Gib hier die MeatStory-ID deines Produkts manuell ein  </p>
+        <Input action='Los' />
       </Segment>
     </div>
     <div>
@@ -87,7 +84,7 @@ const App = () => (
             </Feed.Label>
             <Feed.Content>
               Nach der Geburt bei der Familie Hornbläser in Finkenschlupf ging
-              die Reise nach Weissfurchen. <br/>Dort verbrachte sie viel Zeit
+              die Reise nach Weissfurchen.<br/>Dort verbrachte sie viel Zeit
               fressend und wiederkäuend mit ihren FreundInnen auf den Weiden.
             </Feed.Content>
           </Feed.Event>
@@ -125,7 +122,7 @@ const App = () => (
           <Form.Group grouped>
             <Header as='h3'>Welche Information findest du besonders interessant, was vermisst du?</Header>
             <Form.Field control='textarea' rows='3' />
-            <Button type='submit'>Abschicken</Button>
+            <Button type='submit'>Senden</Button>
           </Form.Group>
         </Form>
       </Segment>
