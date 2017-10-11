@@ -150,7 +150,7 @@ const App = () => (
       </Segment>
     </div>
     <div className='dark'>
-      <Segment basic>
+      <Segment basic className='specialtrick'>
         <Header as='h2'>Partner</Header>
         <div className='is-flex partner'>
           <a href='https://opendata.ch/' target="_blank" rel="noopener noreferrer"><img src='/img/OpenData.ch@2x.png' alt='open data'/></a>

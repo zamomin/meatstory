@@ -1,8 +1,15 @@
+.segment {
+  padding: 1.5em !important;
+  margin: 0px !important;
+}
 a {
   color: #fff !important;
 }
 .fair {
   background-color: #bcee68;
+}
+.icons {
+  border-radius: 0px !important;
 }
 .dark {
   background-color: #a2cd5a;
@@ -10,31 +17,35 @@ a {
 .dark h2 {
   color: #fff !important;
 }
-.is-flex {
-  display: flex;
+.about img {
+  margin-right: 1em;
 }
 .partner {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 }
-.icons {
-   border-radius: 0px !important;
+.is-flex {
+  display: flex;
 }
-.segment {
-   padding: 1.5em !important;
-   margin: 0px !important;
+.specialtrick {
+  padding: 0px!important;
 }
-.content {
-  margin-top: 0px !important;
-  margin-bottom: 10px !important;
+.specialtrick h2 {
+  margin-top: 0px!important;
+  margin-bottom: 21px!important;
+  margin-left: 21px!important;
+  padding-top: 21px!important;
 }
-.is-flex img {
-  margin-right: 2em;
-  margin-bottom: 2em;
+.partner img {
+  margin-right: 10px;
+  margin-left: 21px;
+  margin-bottom: 21px;
   max-width: 100%;
   max-height: 4em;
 }
-.about img {
-  margin-right: 1em;
+
+.content {
+  margin-top: 0px !important;
+  margin-bottom: 10px !important;
 }
