@@ -34,7 +34,7 @@ const App = () => (
               <Header as='h2'>1</Header>
             </Feed.Label>
           <Feed.Content>
-            Kauf dir ein Fleischprodukt welches mit einem MeatStory-Label versehen ist.
+            Kauf dir ein Fleischprodukt mit einem MeatStory-Label.
           </Feed.Content>
           </Feed.Event>
           <Feed.Event>
