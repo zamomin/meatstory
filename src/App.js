@@ -136,18 +136,20 @@ const App = () => (
         <p>MeatStory ermöglicht Konsumenten die Herkunft von Fleischprodukten zu
         verfolgen. Die transparente Rückverfolgbarkeit erleichtert ihnen informierte
         Entscheidungen zu treffen.</p>
-        <div>
-          <Image src='/img/sam.png' avatar size='tiny'/>
-          <span> Samuel Bühlmann schafft begeistert mehr Bewusstsein für dein Plätzli à la Minute.</span>
-        </div>
-        <div>
-          <Image src='/img/simon.png' avatar size='tiny'/>
-          <span> Simon Josi entwickelt geniale Rückverfolgbarkeit von deinem Teller zur Wiese.</span>
-        </div>
-        <div>
-          <Image src='/img/pascal.png' avatar size='tiny'/>
-          <span> Pascal Geronimi zeichnet gekonnt Daten für Lebensmittel-LiebhaberInnen auf.</span>
-        </div>
+        <Feed className='about'>
+          <Feed.Event
+            image='/img/sam.png'
+            content='Samuel Bühlmann schafft begeistert mehr Bewusstsein für dein Plätzli à la Minute.'
+          />
+          <Feed.Event
+            image='/img/simon.png'
+            content='Simon Josi entwickelt geniale Rückverfolgbarkeit von deinem Teller zur Wiese.'
+          />
+          <Feed.Event
+            image='/img/pascal.png'
+            content='Pascal Geronimi zeichnet gekonnt Daten für Lebensmittel-LiebhaberInnen auf.'
+          />
+        </Feed>
       </Segment>
     </div>
     <div className='dark'>

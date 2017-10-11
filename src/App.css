@@ -22,7 +22,7 @@ a {
    border-radius: 0px !important;
 }
 .segment {
-   padding: 2em !important;
+   padding: 1.5em !important;
    margin: 0px !important;
 }
 .content {
@@ -36,5 +36,5 @@ a {
   max-height: 4em;
 }
 .about img {
-  margin: 1em;
+  margin-right: 1em;
 }
