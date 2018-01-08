@@ -25,9 +25,9 @@ const App = () => (
       </div>
       <div className='fair'>
         <Segment basic>
-          <Header size='huge'>Was liegt auf deinem Teller?</Header>
+          <Header as='h1'>Was liegt auf deinem Teller?</Header>
           <div className='id_box'>
-            <Header as='h2'>Finde deine Story!</Header>
+            <Header as='h3'>Finde deine Story!</Header>
             <p>Scanne den QR-Code oder gib die MeatStory-ID ein, z.B. <a className="id">120.1166.0014.6</a></p>
             <Input action='Los' />
           </div>
