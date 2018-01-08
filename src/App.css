@@ -1,3 +1,6 @@
+.width {
+  max-width: 1200px;
+}
 .segment {
   padding: 1.5em !important;
   margin: 0px !important;
@@ -6,17 +9,24 @@
 a {
   color: #fff !important;
 }
-.fair {
-  background-color: #bcee68;
+.landing-image{
+  background-image: url('/img/swiss_cow.jpg') !important;
+  background-size: cover !important;
+  padding-bottom: 100px;
+}
+.id_box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.id {
+  color: #638F1F !important;
 }
 .icons {
   border-radius: 0px !important;
 }
 .dark {
-  background-color: #a2cd5a;
-}
-.dark h2 {
-  color: #fff !important;
+  background-color: #f2f2f2;
 }
 .about img {
   margin-right: 1em;

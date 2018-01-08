@@ -14,55 +14,28 @@ import {
 
 const App = () => (
   <Container>
-    <div>
-      <Segment basic>
-        <Image src='/img/logo-meatstory@2x.png' size='small' alt='logo meatstory'/>
-      </Segment>
+
+
+
+    <div className='landing-image'>
+      <div>
+        <Segment basic>
+          <Image src='/img/logo-meatstory@2x.png' size='small' alt='logo meatstory'/>
+        </Segment>
+      </div>
+      <div className='fair'>
+        <Segment basic>
+          <Header size='huge'>Was liegt auf deinem Teller?</Header>
+          <div className='id_box'>
+            <Header as='h2'>Finde deine Story!</Header>
+            <p>Scanne den QR-Code oder gib die MeatStory-ID ein, z.B. <a className="id">120.1166.0014.6</a></p>
+            <Input action='Los' />
+          </div>
+        </Segment>
+      </div>
     </div>
-    <div className='fair'>
-      <Segment basic>
-      <Header size='huge'>Was liegt auf deinem Teller?</Header>
-      Wir machen die Geschichte deines Steaks sichtbar.
-      </Segment>
-    </div>
-    <div>
-      <Segment basic>
-        <Header as='h2'>So funktionierts</Header>
-        <Feed>
-          <Feed.Event>
-            <Feed.Label>
-              <Header as='h2'>1</Header>
-            </Feed.Label>
-          <Feed.Content>
-            Kauf dir ein Fleischprodukt mit einem MeatStory-Label.
-          </Feed.Content>
-          </Feed.Event>
-          <Feed.Event>
-            <Feed.Label>
-              <Header as='h2'>2</Header>
-            </Feed.Label>
-          <Feed.Content>
-            Scanne den QR-Code auf dem Produkt oder gib die MeatStory-ID manuell ein, z.B. 120 1166 0014 6.
-          </Feed.Content>
-          </Feed.Event>
-          <Feed.Event>
-            <Feed.Label>
-              <Header as='h2'>3</Header>
-            </Feed.Label>
-            <Feed.Content>
-             Lerne die Geschichte deines Produkts kennen.
-            </Feed.Content>
-          </Feed.Event>
-        </Feed>
-      </Segment>
-    </div>
-    <div className='fair'>
-      <Segment basic>
-        <Header as='h2'>Finde deine Story!</Header>
-        <p>Gib hier die MeatStory-ID deines Produkts manuell ein  </p>
-        <Input action='Los' />
-      </Segment>
-    </div>
+
+
     <div>
       <Segment basic>
         <Header as='h2'>Frida la vache qui rit</Header>
@@ -128,6 +101,23 @@ const App = () => (
       </Segment>
     </div>
     <div>
+      <Segment basic className='specialtrick'>
+        <Header as='h2'>Partner</Header>
+        <div className='is-flex partner'>
+          <a href='https://opendata.ch/' target="_blank" rel="noopener noreferrer"><img src='/img/OpenData.ch@2x.png' alt='open data'/></a>
+          <a href='https://food.opendata.ch/' target="_blank" rel="noopener noreferrer"><img src='/img/OpenFoodlogo@2x.png' alt='open food'/></a>
+          <a href='https://www.identitas.ch/' target='_blank' rel="noopener noreferrer"><Image src='/img/id.png' alt='identitas'/></a>
+          <a href='https://www.hafl.bfh.ch/home.html' target='_blank' rel="noopener noreferrer"><Image src='/img/BFH1.png' alt='BFH-HAFL'/></a>
+        </div>
+        <Header as='h2'>Medien</Header>
+        <div className='is-flex partner'>
+          <a href='http://www.20min.ch/schweiz/bern/story/28948666' target='_blank' rel="noopener noreferrer"><Image src='/img/20min@2x.png' alt='20min'/></a>
+          <a href='https://desktop.12app.ch/articles/30000183' target='_blank' rel="noopener noreferrer"><Image src='/img/SonntagsZeitung@2x.png' alt='SonntagsZeitung'/></a>
+        </div>
+      </Segment>
+    </div>
+
+    <div className='dark'>
       <Segment basic className='about'>
         <Header as='h2'>Über uns</Header>
         <p>MeatStory ermöglicht Konsumenten die Herkunft von Fleischprodukten zu
@@ -149,22 +139,8 @@ const App = () => (
         </Feed>
       </Segment>
     </div>
-    <div className='dark'>
-      <Segment basic className='specialtrick'>
-        <Header as='h2'>Partner</Header>
-        <div className='is-flex partner'>
-          <a href='https://opendata.ch/' target="_blank" rel="noopener noreferrer"><img src='/img/OpenData.ch@2x.png' alt='open data'/></a>
-          <a href='https://food.opendata.ch/' target="_blank" rel="noopener noreferrer"><img src='/img/OpenFoodlogo@2x.png' alt='open food'/></a>
-          <a href='https://www.identitas.ch/' target='_blank' rel="noopener noreferrer"><Image src='/img/id.png' alt='identitas'/></a>
-          <a href='https://www.hafl.bfh.ch/home.html' target='_blank' rel="noopener noreferrer"><Image src='/img/BFH1.png' alt='BFH-HAFL'/></a>
-        </div>
-        <Header as='h2'>Medien</Header>
-        <div className='is-flex partner'>
-          <a href='http://www.20min.ch/schweiz/bern/story/28948666' target='_blank' rel="noopener noreferrer"><Image src='/img/20min@2x.png' alt='20min'/></a>
-          <a href='https://desktop.12app.ch/articles/30000183' target='_blank' rel="noopener noreferrer"><Image src='/img/SonntagsZeitung@2x.png' alt='SonntagsZeitung'/></a>
-        </div>
-      </Segment>
-    </div>
+
+
     <div>
       <Segment basic inverted>
         <Header as='h2'>Kontakt</Header>
